@@ -6,13 +6,9 @@ After=network.target
 User=danil
 Group=danil
 
-WorkingDirectory=/home/danil/KindergartenHarmony_bot
-/
-Environment="PYTHONPATH=/home/danil/KindergartenHarmony_bot
-/"
-ExecStart=/home/danil/KindergartenHarmony_bot
-/.venv/bin/python /home/danil/KindergartenHarmony_bot
-/bot_01.py
+WorkingDirectory=/home/danil/KindergartenHarmony_bot/
+Environment="PYTHONPATH=/home/danil/KindergartenHarmony_bot/"
+ExecStart=/home/danil/KindergartenHarmony_bot/.venv/bin/python /home/danil/KindergartenHarmony_bot/bot_01.py
 
 [Install]
 WantedBy=multi-user.target
