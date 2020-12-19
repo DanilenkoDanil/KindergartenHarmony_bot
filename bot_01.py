@@ -10,7 +10,7 @@ def send_message(message):
 
 @bot.message_handler(content_types=['text'])
 def control(message):
-    if len(message.text) > 55 and message.from_user.id != 1028496717 and message.from_user.id != 763070224:
+    if len(message.text) > 85 and message.from_user.id != 1028496717 and message.from_user.id != 763070224:
         bot.forward_message(-1001393620851, message.chat.id, message.message_id)
         bot.delete_message(message.chat.id, message.message_id)
 
